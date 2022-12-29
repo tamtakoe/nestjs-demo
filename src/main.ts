@@ -8,7 +8,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new StaticInterceptor());
 
   app.use((req, res, next) => {
-    console.log('Middleware response:', res);
+    // console.log('Middleware response:', res);
 
     next();
   })
