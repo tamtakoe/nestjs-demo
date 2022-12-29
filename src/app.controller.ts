@@ -8,6 +8,7 @@ export class AppController {
   getFile(@Req() req, @Res() res, next) {
     console.log('Controller response:', res);
     
-    next();
+    // next();
+    res.send('hello world');
   }
 }
